@@ -1,0 +1,29 @@
+{
+  "name": "startafilliate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:smoke",
+    "test:smoke": "node --check automation/pinterest/post-pin.js",
+    "pin:post": "node automation/pinterest/post-pin.js",
+    "pin:post:debug": "HEADLESS=false node automation/pinterest/post-pin.js",
+    "pin:post:dry": "DRY_RUN=true node automation/pinterest/post-pin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caroltpinheiro/startafilliate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/caroltpinheiro/startafilliate/issues"
+  },
+  "homepage": "https://github.com/caroltpinheiro/startafilliate#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "playwright": "^1.59.1"
+  }
+}

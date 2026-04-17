@@ -1,2 +1,5 @@
 .autosave.log
 .claude/
+.env
+artifacts/
+node_modules/
